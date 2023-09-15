@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"];
+        var contador = 0;
+
+        do {
+            var mensagem = prompt("Digite o nome de um planeta para que ele seja encontrado! Caso queira finalizar o sistema, digite para.");
+           var index = planetas.indexOf(mensagem)
+                if (index != -1) {
+                    alert(mensagem + " foi encontrado no array!");
+                    
+                } else if (mensagem == "para"){
+                    alert("Sistema finalizado!");
+                    contador = 3;
+                } else {
+                    alert(mensagem + " não foi encontrado.");
+                }
+
+        } while (contador != 3);
+    </script>
+</body>
+</html>
